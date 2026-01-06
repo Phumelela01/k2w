@@ -686,6 +686,43 @@ html {
     text-decoration: underline;
 }
 
+/* Small screens adjustments for hero text */
+@media (max-width: 639px) {
+    .hero-title {
+        font-size: 2rem;       /* smaller title */
+        line-height: 1.2;      /* tighter line height */
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;       /* smaller subtitle */
+        line-height: 1.4;      /* slightly larger for readability */
+    }
+
+    .highlights {
+        gap: 1rem;
+    }
+}
+@media (max-width: 639px) {
+    .hero {
+        height: auto;
+        padding: 4rem 1rem;
+        min-height: 60vh;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .highlights {
+        gap: 1rem;
+    }
+}
 /* Responsive Design */
 @media (min-width: 640px) {
     .hero-title {
