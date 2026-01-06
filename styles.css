@@ -37,6 +37,15 @@ html {
 }
 
 /* Header */
+
+.header {
+    height: 60px; /* down from 80px */
+}
+
+.header.logo img {
+    height: 36px; /* down from 48px */
+}
+
 .header {
     position: fixed;
     top: 0;
