@@ -239,15 +239,9 @@ html {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateX(-50%) translateY(0);
-    }
-    40% {
-        transform: translateX(-50%) translateY(-10px);
-    }
-    60% {
-        transform: translateX(-50%) translateY(-5px);
-    }
+    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+    40% { transform: translateX(-50%) translateY(-10px); }
+    60% { transform: translateX(-50%) translateY(-5px); }
 }
 
 /* Destinations Section */
@@ -686,22 +680,7 @@ html {
     text-decoration: underline;
 }
 
-/* Small screens adjustments for hero text */
-@media (max-width: 639px) {
-    .hero-title {
-        font-size: 2rem;       /* smaller title */
-        line-height: 1.2;      /* tighter line height */
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;       /* smaller subtitle */
-        line-height: 1.4;      /* slightly larger for readability */
-    }
-
-    .highlights {
-        gap: 1rem;
-    }
-}
+/* Responsive Design */
 @media (max-width: 639px) {
     .hero {
         height: auto;
@@ -723,7 +702,7 @@ html {
         gap: 1rem;
     }
 }
-/* Responsive Design */
+
 @media (min-width: 640px) {
     .hero-title {
         font-size: 3.5rem;
@@ -741,10 +720,6 @@ html {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .pricing-right {
-        width: auto;
     }
 }
 
