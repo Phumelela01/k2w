@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2W Tours - Affordable Getaways Made Easy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo" onclick="navigateToSection('home')">
+                    <img src="logo.png" alt="K2W Tours">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="#home" class="nav-link" data-section="home">Home</a>
+                    <a href="#destinations" class="nav-link" data-section="destinations">Destinations</a>
+                    <a href="tel:0783130828" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        078 313 0828
+                    </a>
+                    <a href="https://web.facebook.com/kasi2winelandstours/?_rdc=1&_rdr#" target="_blank" class="nav-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#home" class="mobile-nav-link" data-section="home">Home</a>
+                <a href="#destinations" class="mobile-nav-link" data-section="destinations">Destinations</a>
+                <a href="tel:0783130828" class="mobile-nav-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    078 313 0828
+                </a>
+                <a href="https://web.facebook.com/kasi2winelandstours/?_rdc=1&_rdr#" target="_blank" class="mobile-nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                    @K2W Tours
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1634547589438-bd758e385381?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDYXBlJTIwVG93biUyMHRyYXZlbHxlbnwxfHx8fDE3Njc2OTYzMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080')">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Affordable Getaways Made Easy</h1>
+            <p class="hero-subtitle">Travel with comfort from Cape Town to South Africa's top destinations</p>
+            
+            <!-- Highlights -->
+            <div class="highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🚐</div>
+                    <h3>Transport Included</h3>
+                    <p>Comfortable shuttle service</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏨</div>
+                    <h3>Accommodation Included</h3>
+                    <p>Quality places to stay</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">👥</div>
+                    <h3>Group-Friendly Pricing</h3>
+                    <p>Better rates for groups</p>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <button class="cta-btn" onclick="navigateToSection('destinations')">
+                <span>Book a Getaway</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-border">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Destinations</h2>
+                <p>Choose your perfect getaway from our curated selection of South Africa's most beautiful destinations</p>
+            </div>
+
+            <div class="destinations-grid">
+                <!-- Knysna -->
+                <div class="destination-card" onclick="openDestinationDetail('knysna')">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1593544792254-57831aae3a70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxLbnlzbmElMjBTb3V0aCUyMEFmcmljYXxlbnwxfHx8fDE3Njc2OTYzMDV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Knysna">
+                    </div>
+                    <div class="destination-overlay"></div>
+                    <div class="destination-content">
+                        <h3>Knysna / Sedgefield</h3>
+                        <div class="destination-footer">
+                            <div>
+                                <p class="price-label">Starting from</p>
+                                <p class="price">R3000</p>
+                                <p class="price-detail">per person</p>
+                            </div>
+                            <button class="view-btn">View Package</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gansbaai -->
+                <div class="destination-card" onclick="openDestinationDetail('gansbaai')">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1704034523195-2a8f400d3233?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxIZXJtYW51cyUyMHdoYWxlc3xlbnwxfHx8fDE3Njc2OTYzMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Gansbaai">
+                    </div>
+                    <div class="destination-overlay"></div>
+                    <div class="destination-content">
+                        <h3>Gansbaai / Hermanus</h3>
+                        <div class="destination-footer">
+                            <div>
+                                <p class="price-label">Starting from</p>
+                                <p class="price">R2500</p>
+                                <p class="price-detail">per person</p>
+                            </div>
+                            <button class="view-btn">View Package</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Langebaan -->
+                <div class="destination-card" onclick="openDestinationDetail('langebaan')">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1695094399480-87b09aa28d53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxMYW5nZWJhYW4lMjBsYWdvb258ZW58MXx8fHwxNzY3Njk2MzA2fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Langebaan">
+                    </div>
+                    <div class="destination-overlay"></div>
+                    <div class="destination-content">
+                        <h3>Langebaan</h3>
+                        <div class="destination-footer">
+                            <div>
+                                <p class="price-label">Starting from</p>
+                                <p class="price">R2500</p>
+                                <p class="price-detail">per person</p>
+                            </div>
+                            <button class="view-btn">View Package</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo and About -->
+                <div>
+                    <img src="logo.png" alt="K2W Tours" class="footer-logo">
+                    <p class="footer-text">
+                        Affordable getaways from Cape Town to South Africa's top destinations. Travel with comfort and create unforgettable memories.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="https://web.facebook.com/kasi2winelandstours/?_rdc=1&_rdr#" target="_blank">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <a href="tel:0783130828">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                078 313 0828
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://web.facebook.com/kasi2winelandstours/?_rdc=1&_rdr#" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                                @K2W Tours
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> K2W Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Destination Detail Modal -->
+    <div class="modal" id="destinationModal">
+        <div class="modal-overlay" onclick="closeDestinationDetail()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeDestinationDetail()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <div class="modal-hero" id="modalHero">
+                <img id="modalHeroImage" src="" alt="">
+                <div class="modal-hero-overlay"></div>
+                <div class="modal-hero-content">
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-location">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        From Cape Town / Cape Winelands
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <!-- Package Includes -->
+                <div class="package-section">
+                    <h3>Package Includes</h3>
+                    <div class="package-grid">
+                        <div class="package-item">
+                            <div class="package-icon">🚐</div>
+                            <div>
+                                <h4>Transportation</h4>
+                                <p>Return shuttle service from Cape Town</p>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="package-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B1538" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>2 Nights Accommodation</h4>
+                                <p>Comfortable lodging included</p>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="package-icon">🔄</div>
+                            <div>
+                                <h4>Local Shuttle Service</h4>
+                                <p>Get around the destination with ease</p>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="package-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B1538" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Activity Included</h4>
+                                <p id="modalActivity"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing -->
+                <div class="pricing-section">
+                    <div class="pricing-content">
+                        <div class="pricing-left">
+                            <p class="pricing-label">Package Price</p>
+                            <div class="pricing-amount">
+                                <span class="price-large" id="modalPrice"></span>
+                                <span class="price-pp">PP</span>
+                            </div>
+                            <div class="pricing-group">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                <p>For groups of 6-8 people</p>
+                            </div>
+                        </div>
+                        <div class="pricing-right">
+                            <a href="tel:0783130828" class="book-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                Book Now
+                            </a>
+                            <a href="https://web.facebook.com/kasi2winelandstours/?_rdc=1&_rdr#" target="_blank" class="message-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                                Message Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="modal-contact">
+                    <p>
+                        Questions? Call us at 
+                        <a href="tel:0783130828">078 313 0828</a>
+                        or find us on 
+                        <a href="https://web.facebook.com/kasi2winelandstours/?_rdc=1&_rdr#" target="_blank">Facebook @K2W Tours</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
